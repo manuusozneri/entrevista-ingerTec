@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevista IngerTec</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="d-flex justify-content-center my-4">
+        <h1>Prueba Tecnica ingerTec</h1>
+    </div>
+    <div class="container my-4">
+        <div class="row d-flex justify-content-center g-2 mx-1">
+            <div class="col-xl-2 col-lg-4 col-md-5 col-sm-5 mx-3 mt-4">
+                <div class="imagenImpar card text-white bg-dark" style="width: 15rem;">
+                    <img src="./assets/image1.jpg" class="card-img-top" alt="Imagen Uno" data-original="image1.jpg">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <span><i class="fa-solid fa-eye"></i></span>
+                      <h5 class="pb-2">0</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-5 col-sm-5 mx-3 mt-4">
+                <div id="imagenParUno" class="imagenPar card text-white bg-dark" style="width: 15rem;">
+                    <img src="./assets/image2.jpg" class="card-img-top " alt="Imagen Dos" data-original="image2.jpg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <h5 class="counterpar pb-2">0</h5></span>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xl-2 col-lg-4 col-md-5 col-sm-5 mx-3 mt-4">
+                <div class="imagenImpar card text-white bg-dark" style="width: 15rem;">
+                    <img src="./assets/image3.jpg" class="card-img-top" alt="Imagen Tres" data-original="image3.jpg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <h5 class="pb-2">0</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-5 col-sm-5 mx-3 mt-4">
+                <div id="imagenParDos" class="imagenPar card text-white bg-dark" style="width: 15rem;">
+                    <img src="./assets/image4.jpg" class="card-img-top" alt="Imagen Cuatro" data-original="image4.jpg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <h5 id="counterParDos" class="counterpar pb-2">0</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-5 col-sm-5 mx-3 mt-4">
+                <div  class="imagenImpar card text-white bg-dark " style="width: 15rem;">
+                    <img src="./assets/image5.jpg" class="card-img-top" alt="Imagen Cinco" data-original="image5.jpg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span><i class="fa-solid fa-eye"></i></span>
+                        <h5 class="pb-2">0</h5>
+                    </div>
+                </div>
+            </div>
+           </div>
+    </div>
+    
+    
+    <div class="button-container d-flex flex-column justify-content-center my-5">
+        <div class="button-wrapper d-flex justify-content-center mb-3">
+            <button class="load-data btn btn-warning text-dark" type="button">Cargar Texto</button>
+        </div>
+        <div class="d-flex justify-content-center">
+            <textarea class="form-control-sm form-control w-50 center-block bg-dark text-white" id="exampleFormControlTextarea" rows="10">Escriba el texto</textarea>
+        </div>
+    </div>
+
+    <div class="modal-container">
+        <img src="./assets/image2.jpg" alt="" class="full-img">
+        <p class="caption-text"></p>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>

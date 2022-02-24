@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(60deg, #181e24 0%, #181c20 100%);
+}
+body div h1{
+    height: 100%;
+    top: 0;
+}
+body h1{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.container div img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.container div.imagenPar img:hover, .container div.imagenImpar img:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(0.9);
+}
+.modal-container{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-container.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.modal-container img{
+    position: absolute;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.25s ease-out
+}
+.modal-container img.open{
+    transform: translate(-50%, -50%);
+}
+.modal-container p{
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0.5%;
+    left: 50%;
+    transform: translate(-50%, -5%)
+}
+.modal-container span{
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.bg-image{
+    background-image: url(./assets/image1.jpg);
+    background-size: cover;
+    height: 100vh
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.overlay button{
+    margin-right: 5px;
+}
+textarea{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
