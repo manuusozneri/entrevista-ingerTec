@@ -1,5 +1,6 @@
 
 /* modal img pares */
+
 var modal = document.querySelector('.modal-container');
 var imgParUno = document.querySelectorAll('#imagenParUno img');
 var imgParDos = document.querySelector('#imagenParDos img');
@@ -19,44 +20,44 @@ imgParUno.forEach((imgPares) =>{
         const img = imgPares.getAttribute('data-original');
         originalImg.src = `./assets/${img}`;
     });
+    imgParDos.addEventListener('click', ()=>{
+        counterFour++
+        counterValueImgFour.innerHTML = counterFour;
+        modal.classList.add("open");
+        const img = imgParDos.getAttribute('data-original');
+        originalImg.src = `./assets/${img}`;
+    })
 });
 modal.addEventListener('click', (e) => {
     if(e.target.classList.contains("modal-container")) {
         modal.classList.remove("open");
     }
 }) 
-imgParDos.addEventListener('click', ()=>{
-    counterFour++
-    counterValueImgFour.innerHTML = counterFour;
-    modal.classList.add("open");
-    const img = imgParDos.getAttribute('data-original');
-    originalImg.src = `./assets/${img}`;
-})
+
 
 /* llenar textarea */
 
 var buttonData = document.querySelector('.load-data');
 
-    buttonData.addEventListener('click', ()=> {
-        const xhttp = new XMLHttpRequest();
-        xhttp.open('GET','home.json', true);
-        xhttp.send();
-        xhttp.onreadystatechange = () =>{
-            if (xhttp.readyState == 4 && xhttp.status == 200){
-                    let data = JSON.parse(xhttp.responseText);
-                    let textarea = document.querySelector('.form-control')
-                    textarea.innerHTML = ''
-                    for(let item of data){
-                        textarea.innerHTML += item.texto
-                    }
+buttonData.addEventListener('click', ()=> {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open('GET','home.json', true);
+    xhttp.send();
+    xhttp.onreadystatechange = () =>{
+        if (xhttp.readyState == 4 && xhttp.status == 200){
+            let data = JSON.parse(xhttp.responseText);
+            let textarea = document.querySelector('.form-control')
+            textarea.innerHTML = ''
+            for(let item of data){
+                textarea.innerHTML += item.texto
             }
         }
-    })
+    }
+})
            
 
 /* pop up img impares */
 var newWindow
-
 
 $(document).on('click', '.imagenImpar img', function(e){
     let id = this.getAttribute('identificador');
