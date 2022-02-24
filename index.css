@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Questrial', sans-serif;
-    
 }
 body{
     background-image: linear-gradient(60deg, #181e24 0%, #181c20 100%);
@@ -70,8 +69,8 @@ body h1{
     cursor: pointer;
 }
 .bg-image{
-    background-image: url(./assets/image1.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh
 }
 .overlay{
